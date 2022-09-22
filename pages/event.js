@@ -8,7 +8,6 @@ import Subtitle from "../components/Subtitle";
 
 const formatDate = (dateAsString) => {
   try {
-    console.log(dateAsString);
     const parsedDate = new Date(dateAsString);
     const formattedDate = format(parsedDate, "dd MMMM h:m bbb");
     return formattedDate;
@@ -17,7 +16,7 @@ const formatDate = (dateAsString) => {
   }
 };
 
-const event = () => {
+const Event = () => {
   const router = useRouter();
   const eventParams = router.query;
 
@@ -53,4 +52,4 @@ const event = () => {
   );
 };
 
-export default event;
+export default Event;
