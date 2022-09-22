@@ -28,10 +28,12 @@ export default function Home() {
           <img
             src="/landing-image.svg"
             alt="Screenshot of app"
-            className="image"
+            className={styles.heroImage}
           />
+          <div className={styles.cta}>
+            <Button>🎉 Create my event</Button>
+          </div>
         </div>
-        <Button>Create my event</Button>
       </main>
     </div>
   );
