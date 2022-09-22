@@ -17,6 +17,10 @@
   align-items: center;
 }
 
+.main h1 {
+  margin-bottom: 1rem;
+}
+
 .copy {
   text-align: center;
 }
@@ -55,6 +59,7 @@
 
   .heroImage {
     width: 440px;
+    height: auto;
     order: 1;
   }
 

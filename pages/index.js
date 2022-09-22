@@ -1,10 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import Header from "../components/Header";
 import Subtitle from "../components/Subtitle";
 import styles from "../styles/Home.module.css";
 import Button from "../components/Button";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 const CreateEventLink = () => {

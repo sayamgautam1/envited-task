@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.content {
+  flex: 1;
+  padding: 8px;
+}
+
+.icon {
+  padding: 4px;
+  background: var(--grey-2);
+  border-radius: 8px;
+}
+.icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.subtitle {
+  color: var(--grey-6);
+}
+.chevron img {
+  width: 30px;
+  height: 30px;
+}

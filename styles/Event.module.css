@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.image > img {
+  width: 100%;
+}
+
+.eventDetails {
+  padding: 1rem;
+}
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+    max-width: 768px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
+    margin-top: 10vh;
+  }
+
+  .eventDetails {
+    flex: 1;
+    margin-top: 50px;
+  }
+
+  .image {
+    flex: 1;
+  }
+}
