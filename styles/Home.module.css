@@ -17,24 +17,51 @@
   align-items: center;
 }
 
-.left {
+.copy {
+  text-align: center;
 }
 
-.right {
+.image {
   text-align: center;
 }
 
 .heroImage {
-  width: 50vw;
+  width: 80%;
   height: auto;
   margin: 2rem 0;
 }
-
-.cta {
+.ctaLeft {
+  display: none;
 }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   .main {
     width: 100%;
+    max-width: 1512px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main {
+    width: 100%;
+    position: relative;
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+
+  .copy {
+    text-align: right;
+    max-width: 521px;
+  }
+
+  .heroImage {
+    width: 440px;
+    order: 1;
+  }
+
+  .ctaRight {
+    display: none;
+  }
+  .ctaLeft {
+    display: block;
   }
 }

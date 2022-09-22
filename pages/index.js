@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.left}>
+        <div className={styles.copy}>
           <Header>
             Imagine if <span className="highlight">Snapchat</span> had events.
           </Header>
@@ -23,14 +23,17 @@ export default function Home() {
             Easily host and share events with your friends across any social
             media.
           </Subtitle>
+          <div className={styles.ctaLeft}>
+            <Button>🎉 Create my event</Button>
+          </div>
         </div>
-        <div className={styles.right}>
+        <div className={styles.image}>
           <img
             src="/landing-image.svg"
             alt="Screenshot of app"
             className={styles.heroImage}
           />
-          <div className={styles.cta}>
+          <div className={styles.ctaRight}>
             <Button>🎉 Create my event</Button>
           </div>
         </div>
