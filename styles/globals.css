@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Helvetica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -15,12 +15,45 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+:root {
+  --primary-4: #240d57;
+  --primary-3: #501fc1;
+  --primary-2: #8456ec;
+  --primary-1: #e87bf8;
+
+  --secondary-3: #ccb6ff;
+  --secondary-2: #ede5ff;
+  --secondary-1: #f6f2ff;
+
+  --alert-pink: #ffd7e0;
+  --alert-red: #e61445;
+  --alert-darkgreen: #00805e;
+  --alert-green: #d3ffe2;
+
+  --grey-6: #4f4f4f;
+  --grey-5: #828282;
+  --grey-4: #bdbdbd;
+  --grey-3: #e0e0e0;
+  --grey-2: #f2f2f2;
+  --grey-1: #bdbdbd;
+}
+
+.highlight {
+  display: block;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(
+    90deg,
+    #8456ec 24.2%,
+    #b066f1 72.33%,
+    #e87bf8 120.46%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.image {
+  width: 150px;
+  height: 300px;
 }
