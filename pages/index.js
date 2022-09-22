@@ -4,6 +4,17 @@ import Header from "../components/Header";
 import Subtitle from "../components/Subtitle";
 import styles from "../styles/Home.module.css";
 import Button from "../components/Button";
+import Link from "next/link";
+import { useRouter } from "next/router";
+
+const CreateEventLink = () => {
+  const router = useRouter();
+  return (
+    <Button onClick={() => router.push("/create-event")}>
+      🎉 Create my event
+    </Button>
+  );
+};
 
 export default function Home() {
   return (
@@ -24,7 +35,7 @@ export default function Home() {
             media.
           </Subtitle>
           <div className={styles.ctaLeft}>
-            <Button>🎉 Create my event</Button>
+            <CreateEventLink />
           </div>
         </div>
         <div className={styles.image}>
@@ -34,7 +45,7 @@ export default function Home() {
             className={styles.heroImage}
           />
           <div className={styles.ctaRight}>
-            <Button>🎉 Create my event</Button>
+            <CreateEventLink />
           </div>
         </div>
       </main>

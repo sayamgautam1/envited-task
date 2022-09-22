@@ -6,4 +6,5 @@
   border: none;
   color: var(--grey-2);
   background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  cursor: pointer;
 }
